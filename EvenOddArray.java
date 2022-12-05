@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+//배열 속에서 짝수, 홀수 개수 찾아 배열에 넣어 반환
 public class EvenOddArray {
     public static int[] solution1(int[] num_list) {
         int[] answer = new int[2];
