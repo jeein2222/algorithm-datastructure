@@ -1,7 +1,7 @@
 package codingTest.programmers.lv01;
 
 
-//크기가 작은 부분문자열
+//크기가 작은 부분문자열 -> 데이터 크기 때문에 long 써줘야 한다..
 class Solution02 {
     public int solution(String t, String p) {
         int len = p.length();
