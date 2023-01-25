@@ -1,58 +1,73 @@
 package codingTest.programmers.lv01;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.stream.Stream;
+import java.util.*;
+
 
 //개인정보 수집 유효기간
 
 class Solution01 {
-    public int[] solution(String today, String[] terms, String[] privacies) {
-        ArrayList<Integer> answer = new ArrayList<>();
-        String[] todays = today.split("\\.");
-        int[] todayInfo=Stream.of(todays).mapToInt(Integer::parseInt).toArray();
-        
-        HashMap<String, Integer> map=new HashMap<>();
-        
-        for (String s : terms) {
-            String[] term = s.split(" ");
-            map.put(term[0], Integer.parseInt(term[1]));
+
+    private int[] addDays(int year, int month, int day, int term) {
+
+        int[] days = new int[3];
+        days[0] = year + (month + term) / 12;
+        days[1] = (month + term) % 12;
+        days[2] = day;
+
+        if (day == 0) {
+            days[1] -= 1;
+            days[2] = 28;
         }
+        if (days[1] == 0) {
+            days[0] -= 1;
+            days[1] = 12;
+        }
+        return days;
+
+    }
+
+    private boolean isLonger(int[] A, int[] B) {
+        for (int i = 0; i < 3; i++) {
+            if (A[i] < B[i]) {
+                return true;
+            } else if (A[i] > B[i]) {
+                return false;
+            }
+        }
+        return false;
+    }
+
+    private int[] transDayToInt(String day) {
+        int[] answer = new int[3];
+        String[] days = day.split("[.]");
+        for (int i = 0; i < 3; i++) {
+            answer[i] = Integer.parseInt(days[i]);
+        }
+        return answer;
+    }
+
+    public int[] solution(String today, String[] terms, String[] privacies) {
+        HashMap<String, Integer> map = new HashMap<>();
+        ArrayList<Integer> answer = new ArrayList<>();
+
+        for (int i = 0; i < terms.length; i++) {
+            String[] cur = terms[i].split(" ");
+            map.put(cur[0], Integer.parseInt(cur[1]));
+        }
+
+        int[] todays = transDayToInt(today);
 
         for (int i = 0; i < privacies.length; i++) {
-            String[] info = privacies[i].split("\\.| ");
-            int year = Integer.parseInt(info[0]);
-            int month = Integer.parseInt(info[1]);
-            int date = Integer.parseInt(info[2]);
-            String term = info[3];
-            int newYear=year;
-            if (map.get(term) + month > 12) {
-                newYear = (map.get(term) + month) / 12 + year;
-            } 
-            
-            int newMonth;
-            if (newYear !=year) {
-                newMonth = (map.get(term) + month) % map.get(term);
-            } else {
-                newMonth = (map.get(term) + month);
-            }
+            String[] cur = privacies[i].split(" ");
+            int[] day = transDayToInt(cur[0]);
+            int[] curDay = addDays(day[0], day[1], day[2] - 1, map.get(cur[1]));
 
-            int newDate = date;
-
-            System.out.println(newYear +","+newMonth+","+newDate);
-           
-            if (newYear < todayInfo[0]) {
-                answer.add(i+1);
-            } else if(newYear == todayInfo[0] && newMonth<todayInfo[1]) {
-               answer.add(i+1);
-            } else if (newYear == todayInfo[0] && newMonth == todayInfo[1] && newDate <= todayInfo[2]) {
-                answer.add(i+1);
+            if (isLonger(curDay, todays)) {
+                answer.add(i + 1);
             }
         }
-        
-        
-        return answer.stream().mapToInt(Integer::intValue).toArray();
+
+        return answer.stream().mapToInt(i -> i).toArray();
     }
 }
 
