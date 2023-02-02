@@ -1,3 +1,3 @@
 # codingTestPractice
-Java 코테 연습
-programmers 문제풀이
+Java 코테 연습 및 알고리즘 개념 정리
+
