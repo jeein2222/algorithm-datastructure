@@ -2,7 +2,7 @@ package codingTest.inflearn;
 
 import java.util.Scanner;
 
-//회문 문자열
+//회문 문자열 -> lr, rt
 public class Sol7 {
     public void solution1(String s) {
         String answer="YES";
