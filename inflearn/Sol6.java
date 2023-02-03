@@ -3,9 +3,9 @@ package codingTest.inflearn;
 import java.util.Scanner;
 
 //중복문자제거
-public class Sol6 {
-    //ksekkset -> kset
+//ksekkset -> kset
 
+public class Sol6 {
     public String solution(String s){
         String answer="";
         for(int i=0;i<s.length();i++){
