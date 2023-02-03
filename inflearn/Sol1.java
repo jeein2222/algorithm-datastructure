@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 //문자 찾기(대소문자 구분 없이)
 public class Sol1 {
-
     public int solution(String str, char c) {
         int count=0;
         str=str.toUpperCase();
