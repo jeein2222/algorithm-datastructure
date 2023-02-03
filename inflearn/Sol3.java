@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-//문장 속 단어->가장 긴 단어 출력
+//문장 속 단어 중 가장 긴 단어 출력
 public class Sol3 {
     public String solution(String s){
         //1번
