@@ -2,7 +2,7 @@ package codingTest.inflearn;
 
 import java.util.Scanner;
 
-//대문자는 소문자로 소문자는 대문자로
+//대소문자 변경
 public class Sol2 {
 
     public String solution(String s){
