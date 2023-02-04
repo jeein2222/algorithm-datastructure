@@ -6,4 +6,5 @@ Java 코테 연습 및 알고리즘 개념 정리
 예시)
 - [거스름돈 문제](https://github.com/jeein2222/codingTestPractice/blob/main/ndb/greedy_imple/Sol02.java)
 - [큰수의 법칙](https://github.com/jeein2222/codingTestPractice/blob/main/ndb/greedy_imple/Sol01.java)
-- 
+- [숫자카드게임](https://github.com/jeein2222/codingTestPractice/blob/main/ndb/greedy_imple/Sol03.java)
+- [1이될 때까지](https://github.com/jeein2222/codingTestPractice/blob/main/ndb/greedy_imple/Sol04.java)
