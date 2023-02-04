@@ -8,7 +8,7 @@ package codingTest.ndb.greedy_imple;
     -> why) 큰 단위의 동전이 항상 작은 단위의 동전의 배수이므로
     -> if) 화폐 단위가 서로 배수 관계가 아니면, 다이나믹 프로그래밍으로 해결해야 한다.
  */
-class sol2{
+class Sol02 {
     public int solution(int money){
         int[] arr={500,100,50,10};
         int count=0;
@@ -20,7 +20,7 @@ class sol2{
 
     }
     public static void main(String[] args) {
-        sol2 s=new sol2();
+        Sol02 s=new Sol02();
         System.out.println(s.solution(1260));
     }
 }
