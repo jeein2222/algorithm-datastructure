@@ -5,40 +5,59 @@ import java.util.Scanner;
 
 //뒤집은 소수
 public class Sol18 {
-    public ArrayList<Integer> solution(int n, String[] arr){
+    //mine
+    public ArrayList<Integer> solution1(int n, int[] arr){
         ArrayList<Integer> answer = new ArrayList<>();
         StringBuilder sb;
         int[] numbers=new int[n];
         for(int i=0;i<arr.length;i++){
-            sb=new StringBuilder(arr[i]);
+            String s=Integer.toString(arr[i]);
+            sb=new StringBuilder(s);
             numbers[i]=Integer.parseInt(sb.reverse().toString());
-        }
-
-
-        for(int i=0;i<numbers.length;i++){
-            int cnt=0;
-            for(int j=1;j<=numbers[i];j++){
-                if(numbers[i]%j==0)
-                    cnt++;
-            }
-            if(cnt==2)
-                answer.add(numbers[i]);
+            if(isPrime(numbers[i])) answer.add(numbers[i]);
         }
 
 
         return answer;
     }
-
+    //answer
+    public boolean isPrime(int num){
+        if(num==1) return false;
+        for(int i=2;i<num;i++){
+            if(num%i==0) return false;
+        }
+        return true;
+    }
+    public ArrayList<Integer> solution2(int n, int[] arr){
+        ArrayList<Integer> answer=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            int tmp=arr[i];
+            int res=0;
+            while(tmp>0){
+                int t=tmp%10;
+                res=res*10+t;
+                tmp=tmp/10;
+            }
+            if(isPrime(res)) answer.add(res);
+        }
+        return answer;
+    }
     public static void main(String[] args) {
         Sol18 s=new Sol18();
         Scanner sc = new Scanner(System.in);
         int n=sc.nextInt();
-        String[] arr=new String[n];
+        int[] arr=new int[n];
         for(int i=0;i<n;i++){
-            arr[i]=sc.next();
+            arr[i]=sc.nextInt();
         }
-        for(int a:s.solution(n,arr)){
+        for(int a:s.solution1(n,arr)){
             System.out.print(a+" ");
+        }
+
+        System.out.println();
+
+        for(int b:s.solution2(n,arr)){
+            System.out.print(b+" ");
         }
 
     }
