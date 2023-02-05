@@ -10,3 +10,4 @@ Java 코테 연습 및 알고리즘 개념 정리
 - [숫자카드게임](https://github.com/jeein2222/codingTestPractice/blob/main/ndb/greedy_imple/Sol03.java)
 - [1이될 때까지](https://github.com/jeein2222/codingTestPractice/blob/main/ndb/greedy_imple/Sol04.java)
 - [곱하기 혹은 더하기](https://github.com/jeein2222/codingTestPractice/blob/main/ndb/greedy_imple/Sol5.java)
+- [회의실 배정]
