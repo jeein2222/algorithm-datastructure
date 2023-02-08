@@ -29,7 +29,7 @@ public class Sol25 {
         while(p1<n){//p1이 남으면
             list.add(arr1[p1++]);
         }
-        while(p2<n){//p2가 남으면
+        while(p2<m){//p2가 남으면
             list.add(arr2[p2++]);
         }
         return list;
@@ -49,7 +49,7 @@ public class Sol25 {
             arr2[i] = sc.nextInt();
         }
 
-        for(int i:s.solution1(n,arr1,m,arr2))
+        for(int i:s.solution2(n,arr1,m,arr2))
             System.out.print(i+" ");
     }
 }
