@@ -1,4 +1,4 @@
-package codingTest.ndb.greedy_imple;
+package codingTest.inflearn.greedy_imple;
 
 /*
     거스름돈 문제
@@ -21,6 +21,16 @@ class Sol02 {
     }
     public static void main(String[] args) {
         Sol02 s=new Sol02();
-        System.out.println(s.solution(1260));
+//        System.out.println(s.solution(1260));
+
+
+        System.out.println("name😉 : Jeein Park");
+        System.out.println("code💻 : Java, Python, Javascript, CSS, HTML5,");
+        System.out.println("tools🛠 : Spring, Spring Boot, Django, React, Node");
+        System.out.println("motto✨ : The best way to predict the future is to invent it.");
+
+
+
+
     }
 }

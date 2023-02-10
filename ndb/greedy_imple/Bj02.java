@@ -1,7 +1,6 @@
-package codingTest.ndb.greedy_imple;
+package codingTest.inflearn.greedy_imple;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 
 //보물
