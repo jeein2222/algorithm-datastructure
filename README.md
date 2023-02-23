@@ -6,6 +6,13 @@ Java 코테 연습 및 알고리즘 개념 정리
 #### String
 
 ##### 예시)
+- [문자찾기](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol1.java)
+- [대소문자 변환](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol2.java)
+- [문장 속 단어](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol3.java)
+- [단어 뒤집기](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol4.java)
+- [특정 문자 뒤집기](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol5.java)
+- [중복 문자 제거](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol6.java)
+- [회문 문자열]((https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol7.java))
 
 #### Array
 
