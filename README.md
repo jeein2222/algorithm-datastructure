@@ -12,7 +12,12 @@ Java 코테 연습 및 알고리즘 개념 정리
 - [단어 뒤집기](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol4.java)
 - [특정 문자 뒤집기](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol5.java)
 - [중복 문자 제거](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol6.java)
-- [회문 문자열]((https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol7.java))
+- [회문 문자열](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol7.java)
+- [유효한 팰린드롬](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol8.java)
+- [숫자만 추출](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol9.java)
+- [가장 짧은 문자거리](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol10.java)
+- [문자열 압축](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol11.java)
+- [암호](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol12.java)
 
 #### Array
 
