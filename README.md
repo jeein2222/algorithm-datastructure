@@ -32,7 +32,7 @@ Java 코테 연습 및 알고리즘 개념 정리
 ##### 예시)
 
 #### Stack, Queue
-Stack 
+1) Stack 
 - 먼저 들어간 자료가 나중에 나옴(LIFO, Last In First Out)
 - 그래프의 깊이 우선 탐색(DFS)에서 사용
 - 재귀적 함수를 호출할 때 사용
@@ -47,6 +47,25 @@ System.out.println(st);//[1, 2]
 System.out.println(st.contains(1));//값 포함하는지 여부 true
 st.empty(); //값 비우기
 ```
+2) Queue
+- 먼저 들어간 자료가 먼저 나오는 구조 FIFO(First In First Out)구조
+- 그래프 넓이 우선 탐색(BFS)에서 사용
+- 컴퓨터 버퍼에서 주로 사용. 
+```
+Queue<Integer> queue=new LinkedList<>();
+queue.add(1);
+queue.add(2);
+queue.add(3);
+
+System.out.println(queue);//[1, 2, 3]
+System.out.println(queue.poll());//1 첫번째 값을 반환하고 제거
+System.out.println(queue);//[2, 3]
+queue.remove();//첫번째 값 제거
+System.out.println(queue);//[3]
+```
+
+
+3) PriorityQueue
 
 ##### 예시)
 - [올바른 괄호 문제](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol36.java)
