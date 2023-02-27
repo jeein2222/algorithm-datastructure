@@ -46,7 +46,6 @@ System.out.println(st.peek());//가장 상단 값 출력
 System.out.println(st);//[1, 2]
 System.out.println(st.contains(1));//값 포함하는지 여부 true
 st.empty(); //값 비우기
-
 ```
 
 ##### 예시)
