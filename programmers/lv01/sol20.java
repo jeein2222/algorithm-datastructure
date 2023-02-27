@@ -30,7 +30,6 @@ public class sol20 {
     }
     public int solution2(String s){
         int answer=0;
-        StringBuilder sb = new StringBuilder();
         int len = s.length();
         String[] alphabets = {"zero","one","two","three","four","five","six","seven","eight","nine"};
         String[] digits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
