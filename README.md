@@ -32,11 +32,28 @@ Java 코테 연습 및 알고리즘 개념 정리
 ##### 예시)
 
 #### Stack, Queue
-Stack : 먼저 들어간 자료가 나중에 나옴(LIFO, Last In First Out)
+Stack 
+- 먼저 들어간 자료가 나중에 나옴(LIFO, Last In First Out)
+- 그래프의 깊이 우선 탐색(DFS)에서 사용
+- 재귀적 함수를 호출할 때 사용
+```
+Stack<Integer> st=new Stack<>();
+st.push(1);
+st.push(2);
+st.push(3);
+st.pop();//값 삭제
+System.out.println(st.peek());//가장 상단 값 출력
+System.out.println(st);//[1, 2]
+System.out.println(st.contains(1));//값 포함하는지 여부 true
+st.empty(); //값 비우기
+
+```
 
 ##### 예시)
 - [올바른 괄호 문제](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol36.java)
-
+- [괄호문자제거](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol37.java)
+- [크레인 인형뽑기](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol38.java)
+- [후위식 연산](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol39.java)
 
 
 #### 그리디 알고리즘
