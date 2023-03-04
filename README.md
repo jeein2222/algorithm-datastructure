@@ -78,6 +78,21 @@ __3) PriorityQueue__
 - [크레인 인형뽑기](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol38.java)
 - [후위식 연산](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol39.java)
 
+
+***
+
+#### [Recursive, Tree, Graph(DFS, BFS 기초)]
+
+##### 예시)
+- [재귀함수 1~n까지 출력하기](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol41.java)
+- [재귀함수 10진수 -> 2진수](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol42.java)
+- [재귀함수 팩토리얼](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol43.java)
+- [재귀함수 피보나치(메모이제이션)](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol44.java)
+- [이진트리 순회 DFS](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol45.java)
+- [부분집합 구하기 DFS](https://github.com/jeein2222/codingTestPractice/blob/main/inflearn/Sol46.java)
+
+
+
 ***
 
 #### 그리디 알고리즘
